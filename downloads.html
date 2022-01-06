@@ -117,9 +117,7 @@
                     <p>Password: amogos</p>
                     <br/>
                     <button id="button1" onclick="button1()" class="buttons downloadButtons">Direct Download</button>
-                    <button id="button2" onclick="button2()" class="buttons downloadButtons">VM Image</button>
-                    <button id="button3" onclick="button3()"  class="buttons downloadButtons">Manual ZIP</button>
-                    <button id="button4" onclick="button4()"  class="buttons downloadButtons">Torrent File</button>
+                    <button id="button3" onclick="button3()" class="buttons downloadButtons">Manual ZIP</button>
                 </div>
                 <div class="columns">
                     <p class="column-title">RPi Version</p>
@@ -154,28 +152,16 @@
         // x64 direct download
         function button1(){
  alert('⚠️ | When flashing the OS, PLEASE only use Universal USB Installer! Rufus and other flashing apps are unsupported!!! Please refer to the install instructions page for more info. Please also use the "VM image" download if you are planning to run the OS in VirturalBox/VMWare! | ⚠️');      
-            window.location.href = "https://github.com/Amog-OS/AmogOS/releases/download/x64-1.4.1/AmogOS-1.4.1-x86_64.iso";
-            startRickroll();
-        }
-		
-		// x64 vm download
-        function button2(){
-            window.location.href = "https://archive.org/download/amogos-x64/VM%20Files/AmogOS-x86_64-1.4.1.ova";
+            window.location.href = "https://github.com/Amog-OS/AmogOS/releases/download/x64-1.4.2/amogos-x86_64.iso";
             startRickroll();
         }
 
 		// x64 zip download
         function button3(){
-            window.location.href = "https://github.com/Amog-OS/AmogOS/releases/download/x64-1.4.1/AmogOS-1.4.1-x64_64-manual.zip";
+            window.location.href = "https://github.com/Amog-OS/AmogOS/releases/download/x64-1.4.2/amogos_x86_64.tar.gz";
             startRickroll();
         }
-		
-        // x64 torrent download
-        function button4(){
- alert('⚠️ | When flashing the OS, PLEASE only use Universal USB Installer! Rufus and other flashing apps are unsupported!!! Please refer to the install instructions page for more info. Please also use the "VM image" download if you are planning to run the OS in VirturalBox/VMWare! | ⚠️');
-            window.location.href = "https://github.com/Amog-OS/AmogOS/releases/download/x64-1.4.1/AmogOS-1.4.1-x86_64.torrent";
-            startRickroll();
-        }
+	    
 		
         // rpi direct download
         function button5(){
