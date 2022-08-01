@@ -126,6 +126,14 @@
                 line-height: 24px;
             }
         }
+
+        #particles-js {
+            height: 100%;
+			z-index: -1;
+			position: fixed;
+			width: 100%;
+			margin-top: -500px;
+        }
     </style>
 </head>
 <body>
@@ -159,6 +167,7 @@
         </footer>
     </div>
     </div>
+    <div id="particles-js"></div>
     <script>
         document.getElementById("download").innerHTML = "Download";
         
@@ -188,6 +197,12 @@
 
         console.log("%c3yr old haccing skills #2: inspect elements and console", "color:blue; font-size:50px");
         console.log("%cstop being s u s you little baka", "color:red; font-size:80px");
+    </script>
+    <script src="./startpage/particle.js"></script>
+    <script>
+        particlesJS.load('particles-js', './startpage/particles.json', function () {
+            console.log('callback - particles.js config loaded');
+        });
     </script>
 </body>
 </html>
